@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio :)</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="background-color: blanchedalmond;">
+	<!--1-->
+	<div id="display_head" class="container-fluid bg-dark sticky-top header text-justify p-5">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9LOYm9Ca3Y1Lmk-k3CSK-UHRnvX92MxOk4HE2DwJ6g&s" alt="test"	  class="img-thumbnail img-fluid">
+		<a href="#About">Home</a>
+		<a href="#About">About</a>
+		<a href="#MyWork">MyWork</a>
+		<a href="#Services">Services</a>
+		<a href="#Contact">Contact</a>
+	</div>
+	<div id="main" style="display: none;">	
+		<!--2-->
+		<div id="About">
+			<div id="bout_sect">
+				<br><br><br><br><br><br><br>
+				<h2>About:</h2>
+				<h3>Good day! If you're looking for a commendable designs for your website, then you're in the right place!</h3>
+				<p>By the way, let me first introduce myself. My name is Earl Vincent Co, I'm 18 years old. <br>I'm First year 	college and currently taking Bachelor of Science and Information Technology at Global Reciprocal Colleges.</p>
+			</div>
+			<div id="about_sidebar">
+				<img src="https://i.ytimg.com/vi/5w5cY-kxxQQ/maxresdefault.jpg" alt="motivation" class="img-thumbnail img-fluid">
+				<h2>About Me:</h2>
+				<p>I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and 		adaptable to all challenging situations. I am able to work well both in a team environment as well as using own 		initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
+				<div class="buttons">
+					<input type="button" value="Skills:" onclick="xd('Skills')"><br>
+					<input type="button" value="Experiences:" onclick="xd('Exp')"><br>
+					<input type="button" value="Education:" onclick="xd('Educ')"><br>
+				</div>
+				<div class="texts">
+					<div id="Skills" style="display: none;">
+						<h6>Skills:</h6>
+						<h6>Soft Skills:</h6>
+						<p>Communication, Creativty, Collaboration Skills, <br>Planning and Organization, Adaptable, Problem Solving, 	<br>	Active Listener, Time Management, Technology.</p>
+						<h6>Hard Skills:</h6>
+						<p>HTML/CSS, PHP, Javascript, <br>MySql, C#, Bootstrap</p>
+					</div>
+					<div id="Exp" style="display: none;">
+						<h6>Experiences:</h6>
+						<p>2023:<br>Work Immersion</p>
+					</div>
+					<div id="Educ" style="display: none;">
+						<h6>Education:</h6>
+						<p>2021 - 2023: <br>Tinajeros National HighSchool (SHS)<br> ICT Strand</p>
+						<p>2023: <br>Global Reciprocal Colleges <br> Bachelor of Science in Information Technology</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Portfolio-->
+		<div id="MyWork">
+			<h2 style="text-align: center;">My Portfolio:</h2>
+			<div class="work">
+				<a href="#"><h5>Layout Design:</h5></a>
+				<a href="#"><h5>Web Design:</h5></a>
+			</div>
+			<div class="work">
+				<a href="#"><img src="https://jomaridas.github.io/JomariPortfolio/images/1.png"></a>
+				<a href="#"><img src="https://jomaridas.github.io/JomariPortfolio/images/2.png"></a>		
+			</div>
+		</div>
+		<!--Services-->
+		<div id="Services">
+			<h2 style="text-align: center;">Services:</h2>
+		</div>
+	</div>
+	<div id="Home" class="container-fluid">
+		<div class="container" id="test">
+			<h1>Hello! Welcome to My Portfolio</h1>
+      		<h2>Zzz XDXD</h2>
+      		<input type="button" value="Get Started" onclick="xd('main')">
+		</div>
+	</div>
+	<script>
+        window.onload = function() {
+            window.scrollTo(0, 0, 0);
+        };           
+    </script>
+    <script type="text/javascript">
+    	function xd(elementId){
+    		var hidden = document.getElementById(elementId);
+            if (hidden.style.display === "none") {
+                hidden.style.display = "block";
+            } else {
+                hidden.style.display = "none"
+            }    
+    	}
+    </script>
+</body>
+</html>
